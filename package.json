@@ -1,0 +1,19 @@
+{
+    "name": "tf2-currencies",
+    "version": "1.0.0",
+    "description": "Tool for handling Team Fortress 2 currencies",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nicklason/node-tf2-currencies.git"
+    },
+    "author": {
+        "name": "Nicklas Marc Pedersen",
+        "url": "https://nicklas.io"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Nicklason/node-tf2-currencies/issues"
+    },
+    "homepage": "https://github.com/Nicklason/node-tf2-currencies#readme"
+}
