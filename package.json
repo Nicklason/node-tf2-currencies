@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Tool for handling Team Fortress 2 currencies",
     "main": "index.js",
+    "scripts": {
+        "lint": "eslint ./"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Nicklason/node-tf2-currencies.git"
@@ -15,5 +18,11 @@
     "bugs": {
         "url": "https://github.com/Nicklason/node-tf2-currencies/issues"
     },
-    "homepage": "https://github.com/Nicklason/node-tf2-currencies#readme"
+    "homepage": "https://github.com/Nicklason/node-tf2-currencies#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^5.2.0",
+        "eslint-config-google": "^0.9.1",
+        "nodemon": "^1.18.3"
+    }
 }
