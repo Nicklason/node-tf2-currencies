@@ -4,7 +4,8 @@
     "description": "Tool for handling Team Fortress 2 currencies",
     "main": "index.js",
     "scripts": {
-        "lint": "eslint ./"
+        "lint": "eslint ./",
+        "test": "mocha"
     },
     "repository": {
         "type": "git",
@@ -23,8 +24,12 @@
         "pluralize": "^7.0.0"
     },
     "devDependencies": {
+        "assert": "^1.4.1",
+        "coveralls": "^3.0.2",
         "eslint": "^5.2.0",
         "eslint-config-google": "^0.9.1",
+        "istanbul": "^0.4.5",
+        "mocha": "^5.2.0",
         "nodemon": "^1.18.3"
     }
 }
