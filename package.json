@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "lint": "eslint ./",
-        "test": "mocha"
+        "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
+        "coveralls": "cat ./coverage/lcov.info | coveralls"
     },
     "repository": {
         "type": "git",
