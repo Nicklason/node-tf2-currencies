@@ -19,7 +19,9 @@
         "url": "https://github.com/Nicklason/node-tf2-currencies/issues"
     },
     "homepage": "https://github.com/Nicklason/node-tf2-currencies#readme",
-    "dependencies": {},
+    "dependencies": {
+        "pluralize": "^7.0.0"
+    },
     "devDependencies": {
         "eslint": "^5.2.0",
         "eslint-config-google": "^0.9.1",
