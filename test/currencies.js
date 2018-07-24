@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint no-undef: 0 */
+
 const Currencies = require('../');
 const assert = require('assert');
 

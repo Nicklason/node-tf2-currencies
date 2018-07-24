@@ -10,7 +10,7 @@ function register (components) {
     components.forEach(function (component) {
         currencies[component] = require('./lib/' + component);
     });
-};
+}
 
 register([
     'toScrap',
