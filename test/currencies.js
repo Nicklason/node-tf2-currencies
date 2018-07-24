@@ -49,7 +49,7 @@ describe('Object', function () {
             const currencies = new Currencies({ keys: 1, metal: 0 });
             assert.strictEqual(currencies.toValue(33), 297);
         });
-        it('should throw if missing convertion rate when there are keys involved', function () {
+        it('should throw if missing convertion rate with keys', function () {
             const currencies = new Currencies({ keys: 1, metal: 0 });
             assert.throws(function () {
                 currencies.toValue();
@@ -66,7 +66,7 @@ describe('Class', function () {
             const currencies2 = Currencies.toCurrencies(value, 33);
             assert.deepEqual(currencies2, currencies);
         });
-        it('should throw if missing convertion rate when there are keys involved', function () {
+        it('should throw if missing convertion rate', function () {
             assert.throws(function () {
                 Currencies.toCurrencies(10);
             });
