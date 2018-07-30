@@ -9,7 +9,8 @@
   "rules": {
     "comma-dangle": [2, "never"],
     "max-len": [2, {
-      "ignoreComments": true
+      "ignoreComments": true,
+      "ignoreStrings": true
     }],
     "linebreak-style": 0,
     "keyword-spacing": 2,
