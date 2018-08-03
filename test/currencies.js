@@ -56,6 +56,14 @@ describe('Object', function () {
             });
         });
     });
+
+    describe('#toJSON()', function () {
+        it('should be the same object', function () {
+            const json = { keys: 1, metal: 1 };
+            const currencies = new Currencies(json);
+            assert.deepStrictEqual(currencies.toJSON(), json);
+        });
+    });
 });
 
 describe('Class', function () {
