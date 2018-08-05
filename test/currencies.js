@@ -55,6 +55,10 @@ describe('Object', function () {
                 currencies.toValue();
             });
         });
+        it('should return be able to handle negative values', function () {
+            const currencies = new Currencies({ keys: -1, metal: -1 });
+            assert.strictEqual(currencies.toValue(33), -306);
+        });
     });
 
     describe('#toJSON()', function () {
@@ -70,6 +74,12 @@ describe('Class', function () {
     describe('#toCurrencies', function () {
         it('should be a copy of the instance', function () {
             const currencies = new Currencies({ keys: 1, metal: 0 });
+            const value = currencies.toValue(33);
+            const currencies2 = Currencies.toCurrencies(value, 33);
+            assert.deepEqual(currencies2, currencies);
+        });
+        it('should work with negative values', function () {
+            const currencies = new Currencies({ keys: -1, metal: -1 });
             const value = currencies.toValue(33);
             const currencies2 = Currencies.toCurrencies(value, 33);
             assert.deepEqual(currencies2, currencies);
