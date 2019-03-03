@@ -17,12 +17,6 @@ describe('Object', function () {
                 new Currencies();
             });
         });
-        it('should throw if missing property', function () {
-            assert.throws(function () {
-                new Currencies({ keys: 0 });
-                new Currencies({ metal: 0 });
-            });
-        });
     });
 
     describe('#toString()', function () {
