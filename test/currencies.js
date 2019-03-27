@@ -78,11 +78,6 @@ describe('Class', function () {
             const currencies2 = Currencies.toCurrencies(value, 33);
             assert.deepEqual(currencies2, currencies);
         });
-        it('should throw if missing convertion rate', function () {
-            assert.throws(function () {
-                Currencies.toCurrencies(10);
-            });
-        });
     });
 
     describe('#toScrap', function () {
