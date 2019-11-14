@@ -17,6 +17,11 @@ describe('Object', function () {
                 new Currencies();
             });
         });
+        it('should throw an error when using a rational number for keys when supplying metal', function () {
+            assert.throws(function () {
+                new Currencies({ keys: 1.5, metal: 2.11 });
+            });
+        });
     });
 
     describe('#toString()', function () {
