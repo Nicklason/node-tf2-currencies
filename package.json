@@ -1,6 +1,6 @@
 {
     "name": "tf2-currencies",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Tool for handling Team Fortress 2 currencies",
     "main": "index.js",
     "engines": {
