@@ -32,6 +32,10 @@ describe('Object', function () {
             const currencies = new Currencies({ keys: 0, metal: 0.16 });
             assert.equal(currencies.toString(), '0.16 ref');
         });
+        it('should return "0 keys, 0 ref"', function () {
+            const currencies = new Currencies({ keys: 0, metal: 0 });
+            assert.equal(currencies.toString(), '0 keys, 0 ref');
+        });
         it('should not be affected by floating point errors', function () {
             const currencies = new Currencies({ keys: 0, metal: 4.77 });
             assert.equal(currencies.toString(), '4.77 ref');
