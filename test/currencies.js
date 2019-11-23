@@ -58,8 +58,8 @@ describe('Object', function () {
             });
         });
         it('should return be able to handle negative values', function () {
-            const currencies = new Currencies({ keys: -1, metal: -1 });
-            assert.strictEqual(currencies.toValue(33), -306);
+            const currencies = new Currencies({ keys: -1, metal: -4.77 });
+            assert.strictEqual(currencies.toValue(33), -340);
         });
     });
 
